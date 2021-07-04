@@ -246,9 +246,64 @@ namespace ConsoleApp1
                 Console.WriteLine("Зачёт не сдан");
             }
 
-            */
+            
 
+            int age;
+            int score;
+            Console.WriteLine("Enter  age: ");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the number of points: ");
+            score = Convert.ToInt32(Console.ReadLine());
+            if (age >= 18 || score >= 50)
+            {
+                Console.WriteLine("Welcome");
+                Console.WriteLine("Age = " + age + "\nscore = " + score);
+            }
+            else
+            {
+                Console.WriteLine("Access id denied");
+            }
+            
+            int age = 18;
+            if (!(age >= 16))
+            {
+                Console.WriteLine("Your age is less than 16");
+            }
+            else
+            {
+                Console.WriteLine("Did not work");
+            }
+            
+            int age;
+            Console.WriteLine("Введите возраст: ");
+            age = Convert.ToInt32(Console.ReadLine());
+            string message;
+            message = (age >= 18) ? "Welcome" : "sorry";
+            Console.WriteLine(message);
+            
+            do
+            {
+                Console.Write("x = ");
+               
+                string str = Console.ReadLine();
+                if(str == "Exit")
+                 break;
 
+                int x = Convert.ToInt32(str);
+                Console.Write("y = ");
+                int y = Convert.ToInt32(Console.ReadLine());
+
+                int sum = x + y;
+                Console.WriteLine("Result : {0}", sum);
+            }
+            while (true);
+            
+            int x = 4; int y = 9;
+            x = (y % x != 0) ? y / x : y;
+           */
+            int number = Convert.ToInt32(Console.ReadLine());
+            if (number % 3)
+                number == *
 
         }
 
