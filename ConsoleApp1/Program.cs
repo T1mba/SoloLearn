@@ -300,10 +300,43 @@ namespace ConsoleApp1
             
             int x = 4; int y = 9;
             x = (y % x != 0) ? y / x : y;
-           */
+          
             int number = Convert.ToInt32(Console.ReadLine());
             if (number % 3)
                 number == *
+           
+            int Age;
+            string Email;
+            string Name;
+            Console.WriteLine("Input Age: ");
+            Age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input Email: ");
+            Email = Console.ReadLine();
+            Console.WriteLine("Input Name: ");
+            Name = Console.ReadLine();
+            if (Age < 18)
+            {
+                Console.WriteLine("No entry");
+            }
+            else
+            {
+                Console.WriteLine("Access is allowed"); 
+            }
+            if (Email.Contains("@") || Email.Length < 5 || Email.Contains("."))
+            {
+
+            }
+            
+               
+            else
+            {
+                Console.WriteLine("Incorrect mail format");
+            }
+    
+              */
+
+        
+            
 
         }
 
